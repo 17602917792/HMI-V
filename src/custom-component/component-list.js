@@ -1,0 +1,270 @@
+// 公共样式
+export const commonStyle = {
+	rotate: 0,
+	opacity: 1,
+}
+
+export const commonAttr = {
+	animations: [],
+	events: {},
+	groupStyle: {}, // 当一个组件成为 Group 的子组件时使用
+	isLock: false, // 是否锁定组件
+}
+
+// 编辑器左侧组件列表
+const list = [{
+	type: 1,
+	component: 'v-text',
+	label: '文字',
+	propValue: '双击编辑文字',
+	icon: 'wenzi',
+	style: {
+		width: 200,
+		height: 22,
+		fontSize: 14,
+		fontWeight: 500,
+		lineHeight: '',
+		letterSpacing: 0,
+		textAlign: '',
+		color: '',
+	},
+},
+{
+	type: 1,
+	component: 'v-iframe',
+	label: 'Iframe',
+	propUrl: '输入内嵌地址',
+	icon: '',
+	style: {
+		width: 300,
+		height: 300,
+	},
+},
+{
+	type: 1,
+	component: 'v-text',
+	label: '文本',
+	propValue: '双击输入文字',
+	icon: 'wenzi',
+	style: {
+		width: 500,
+		height: 22,
+		fontSize: 14,
+		fontWeight: 500,
+		lineHeight: '',
+		letterSpacing: 0,
+		textAlign: 'center',
+		color: '',
+		borderColor: '#000',
+		borderWidth: 1,
+		backgroundColor: '',
+		borderStyle: 'solid',
+	},
+},
+{
+	type: 2,
+	component: 'v-button',
+	label: '按钮',
+	propValue: '按钮',
+	icon: 'fuhao-anniu',
+	style: {
+		width: 100,
+		height: 34,
+		borderWidth: 1,
+		borderColor: '',
+		borderRadius: '',
+		fontSize: 14,
+		fontWeight: 500,
+		lineHeight: '',
+		letterSpacing: 0,
+		textAlign: '',
+		variable: '',
+		color: '',
+		backgroundColor: '',
+	},
+},
+{
+	type: 2,
+	component: 'v-switch',
+	label: '滑块',
+	propValue: '滑块',
+	icon: 'kaiguan',
+	style: {
+		width: 100,
+		height: 34,
+		fontSize: 14,
+		textAlign: '',
+		// variable: '',
+	},
+},
+{
+	type: 1,
+	component: 'Picture',
+	label: '图片',
+	icon: 'charutupian',
+	propValue: require('@/assets/title.jpg'),
+	style: {
+		width: 300,
+		height: 200,
+		borderRadius: '',
+	},
+},
+{
+	type: 1,
+	component: 'rect-shape',
+	label: '矩形',
+	propValue: '&nbsp;',
+	icon: 'xingzhuang-juxing',
+	style: {
+		width: 100,
+		height: 100,
+		fontSize: 14,
+		fontWeight: 500,
+		lineHeight: '',
+		letterSpacing: 0,
+		textAlign: 'center',
+		color: '',
+		borderColor: '#000',
+		borderWidth: 1,
+		backgroundColor: '',
+		borderStyle: 'solid',
+		borderRadius: '',
+		verticalAlign: 'middle',
+	},
+},
+{
+	type: 1,
+	component: 'CircleShape',
+	label: '圆形',
+	propValue: '&nbsp;',
+	icon: 'yuanxingweixuanzhong',
+	style: {
+		width: 100,
+		height: 100,
+		fontSize: 14,
+		fontWeight: 500,
+		lineHeight: '',
+		letterSpacing: 0,
+		textAlign: 'center',
+		color: '',
+		borderColor: '#000',
+		borderWidth: 1,
+		backgroundColor: '',
+		borderStyle: 'solid',
+		verticalAlign: 'middle',
+	},
+},
+{
+	type: 1,
+	component: 'triangle',
+	label: '三角',
+	propValue: '&nbsp;',
+	icon: 'xingzhuang-sanjiaoxing',
+	stroke: '#000',
+	strokewidth: 1,
+	fill: 'none',
+	style: {
+		width: 100,
+		height: 100,
+		fontSize: 14,
+		fontWeight: 500,
+		lineHeight: '',
+		letterSpacing: 0,
+		textAlign: 'center',
+		color: '',
+		verticalAlign: 'middle',
+	},
+},
+{
+	type: 1,
+	component: 'warning',
+	label: '报警',
+	propValue: '',
+	icon: 'baojingjilu',
+	style: {
+		width: 700,
+		height: 500,
+		fontSize: 18,
+		backgroundColor: '',
+
+	},
+	lineheight: 40,
+	linebackground: '#fff6f6',
+},
+{
+	type: 1,
+	component: 'operation-log',
+	label: '日志',
+	propValue: '',
+	icon: 'biaodanzujian-biaoge',
+	style: {
+		width: 700,
+		height: 500,
+		fontSize: 18,
+		backgroundColor: '',
+		color: '',
+
+	},
+	lineheight: 40,
+	linebackground: '#fff6f6',
+},
+{
+	type: 1,
+	component: 'v-divider',
+	label: '线条',
+	propValue: '&nbsp;',
+	icon: 'xiantiao',
+	color: '#000000',
+	height: 2,
+	style: {
+		width: 300,
+		height: 40,
+	},
+},
+{
+	type: 1,
+	component: 'v-date',
+	label: '日期',
+	propValue: '&nbsp;',
+	icon: 'riqi',
+	style: {
+		width: 230,
+		height: 22,
+		color: '#000',
+		fontSize: 20,
+		fontWeight: 400,
+		letterSpacing: 0,
+		date: ''
+	},
+},
+{
+	type: 1,
+	component: 'v-time',
+	label: '时间',
+	propValue: '&nbsp;',
+	icon: 'a-217shijian-xianxing',
+	style: {
+		width: 200,
+		height: 22,
+		color: '#000',
+		fontSize: 20,
+		fontWeight: 400,
+		letterSpacing: 0,
+		time: 'HH:mm:ss'
+	},
+},
+]
+
+for (let i = 0, len = list.length; i < len; i++) {
+	const item = list[i]
+	item.style = {
+		...commonStyle,
+		...item.style,
+	}
+	list[i] = {
+		...commonAttr,
+		...item,
+	}
+}
+
+export default list
